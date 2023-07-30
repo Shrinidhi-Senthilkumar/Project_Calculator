@@ -1,0 +1,32 @@
+print("Enter the values:")
+numbers=list(map(int,input().split()))
+
+numbers.sort()
+print(numbers) 
+    
+sum = 0
+for num in numbers:
+  sum+=num
+print("Total=", end="")
+print(sum)
+
+product=1
+for num in numbers:
+  product*=num
+print("Product=", end="")
+print(product)
+    
+square = 1
+for num in numbers:
+  square=num**2
+print("Square=", end="")
+print(square)
+    
+cube = 0
+for num in numbers:
+  cube=num**3
+print("Cube=", end="")
+print(cube)
+
+#Note:
+#Cube and square works with one input number. When more than one number is present, it squares or cubes the greatest number
